@@ -44,11 +44,16 @@ export const GlobalProvider = ({children}) => {
     
             return totalIncome;
         }
+        console.log('total',totalIncome)
     
     
     return (
         <GlobalContext.Provider value ={{
-            addIncome
+            addIncome,
+            getIncomes, 
+            incomes,
+            deleteIncome,
+            totalIncome
         }
         } >
             {children}

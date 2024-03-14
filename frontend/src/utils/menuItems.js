@@ -1,28 +1,28 @@
-import {dashboard, expenses, transactions, trend} from '../utils/Icons'
+import { faChartLine, faTags, faArrowTrendUp, faMoneyBillTransfer } from '@fortawesome/free-solid-svg-icons';
 
 export const menuItems = [
     {
         id: 1,
         title: 'Dashboard',
-        icon: dashboard,
+        icon: faChartLine,
         link: '/dashboard'
     },
     {
         id: 2,
         title: "View Transactions",
-        icon: transactions,
+        icon: faArrowTrendUp,
         link: "/dashboard",
     },
     {
         id: 3,
         title: "Incomes",
-        icon: trend,
+        icon: faMoneyBillTransfer,
         link: "/dashboard",
     },
     {
         id: 4,
         title: "Expenses",
-        icon: expenses,
+        icon: faTags,
         link: "/dashboard",
     },
-]
+];

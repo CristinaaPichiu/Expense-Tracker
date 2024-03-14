@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOut } from '@fortawesome/free-solid-svg-icons';
 import avatar from '../../img/avatar.png'
-import { signout } from '../../utils/Icons'
 import { menuItems } from '../../utils/menuItems'
 
-function Navigation({active, setActive}) {
+function Navigation({ active, setActive }) {
     
     
     return (
@@ -23,14 +24,14 @@ function Navigation({active, setActive}) {
                         onClick={() => setActive(item.id)}
                         className={active === item.id ? 'active': ''}
                     >
-                        {item.icon}
+                        <FontAwesomeIcon icon={item.icon} />
                         <span>{item.title}</span>
                     </li>
                 })}
             </ul>
             <div className="bottom-nav">
                 <li>
-                    {signout} Sign Out
+                    <FontAwesomeIcon icon={faSignOut} /> Sign Out
                 </li>
             </div>
         </NavStyled>
@@ -91,7 +92,7 @@ const NavStyled = styled.nav`
             color: rgba(34, 34, 96, .6);
             padding-left: 1rem;
             position: relative;
-            i {
+            .svg-inline--fa {
                 color: rgba(34, 34, 96, 0.6);
                 font-size: 1.4rem;
                 transition: all .4s ease-in-out;
@@ -101,7 +102,7 @@ const NavStyled = styled.nav`
 
     .active {
         color: rgba(34, 34, 96, 1) !important;
-        i {
+        .svg-inline--fa {
             color: rgba(34, 34, 96, 1) !important;
         }
         &::before {
