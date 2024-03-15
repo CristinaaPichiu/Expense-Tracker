@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { dateFormat } from '../../utils/dateFormat';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faCreditCard, faTags, faWallet, faCog, faSignOut, faMoneyBillTrendUp, faMoneyBillTransfer, faMoneyBill, faEarthAmericas, faArrowTrendUp, faBitcoin, faPiggyBank, faYoutube, faCcVisa, faUsersBetweenLines, faDollarSign, faCalendar, faComment, faPlus, faTrash, faUtensils, faShirt, faBookOpen, faBowlFood, faBriefcaseMedical, faTv, faCircleDot } from '@fortawesome/free-solid-svg-icons';
+import { faBookOpen, faMoneyBill, faBowlFood, faBriefcaseMedical, faCircleDot, faEarthAmericas, faShirt, faTv, faUtensils, faCreditCard, faArrowTrendUp, faUsersBetweenLines, faDollarSign, faCalendar, faComment, faTrash, faPlus, faBitcoin, faPiggyBank, faYoutube, faCcVisa } from '@fortawesome/free-solid-svg-icons';
 import Button from '../Button/Button';
+
 
 function IncomeItem({
     id,
