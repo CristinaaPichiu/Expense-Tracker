@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOut } from '@fortawesome/free-solid-svg-icons';
-import avatar from '../../img/avatar.png'
+import avatar3 from '../../img/avatar3.png'
 import { menuItems } from '../../utils/menuItems'
 
 function Navigation({ active, setActive }) {
@@ -11,9 +11,9 @@ function Navigation({ active, setActive }) {
     return (
         <NavStyled>
             <div className="user-con">
-                <img src={avatar} alt="" />
+                <img src={avatar3} alt="" />
                 <div className="text">
-                    <h2>Mike</h2>
+                    <h2>Cristina</h2>
                     <p>Your Money</p>
                 </div>
             </div>
